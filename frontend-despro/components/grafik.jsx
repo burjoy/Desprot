@@ -32,7 +32,6 @@ function Graph() {
   const [currentDate, setCurrentDate] = useState();
 
   useEffect(() => {
-    console.log(cobaSnapshot());
     const app = initializeApp(cobaSnapshot());
     const db = getFirestore(app);
     const data = collection(db, "data_mac");
@@ -41,20 +40,14 @@ function Graph() {
       const orang = [];
       snapshot.forEach((data_orang) => {
         const data = data_orang.data();
-        console.log(data);
 
         const panjang = Object.keys(data).length;
-        console.log(panjang);
 
         const keys = Object.keys(data);
-        console.log(keys);
+  
         const sortedKeys = keys.sort();
-        console.log(sortedKeys);
-        
-        console.log(data[sortedKeys[panjang-1]]);
-        const current_data = data[sortedKeys[panjang-1]];
 
-        console.log(current_data.length);
+        const current_data = data[sortedKeys[panjang-1]];
 
         current_data.forEach((buat_grafik) => {
           // console.log(buat_grafik)
@@ -83,7 +76,6 @@ function Graph() {
         setCurrentDate(keys[panjang-1]);
       })
     })
-    console.log(import.meta.env.VITE_KEY)
   }, []);
 
   return (
