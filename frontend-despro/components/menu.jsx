@@ -22,8 +22,8 @@ function Menu(){
         </div>
     </div>
 
-    <div className='flex justify-center mt-4 hover:cursor-pointer transition-transform transform-gpu hover:scale-105' onClick={to_crowd}>
-        <div className="shadow-md rounded p-6 bg-white w-[80%] flex items-center">
+    <div className='flex justify-center mt-4'>
+        <div className="shadow-md rounded p-6 bg-white w-[80%] flex items-center transition-transform transform-gpu hover:scale-105 hover:cursor-pointer" onClick={to_crowd}>
         <i className="fa fa-users mr-4"></i>
             <p className="mt-2 mx-auto">Crowd Monitor</p>
         </div>
@@ -36,8 +36,8 @@ function Menu(){
         </div>
     </div> */}
 
-    <div className='flex justify-center mt-4 hover:cursor-pointer transition-transform transform-gpu hover:scale-105'>
-        <div className="shadow-md rounded p-6 bg-white w-[80%] flex items-center"> 
+    <div className='flex justify-center mt-4'>
+        <div className="shadow-md rounded p-6 bg-white w-[80%] flex items-center transition-transform transform-gpu hover:scale-105 hover:cursor-pointer"> 
         <i className="fa fa-bus mr-4"></i>
             <p className="mt-2 mx-auto">Bus Tracker</p>
         </div>
