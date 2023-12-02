@@ -30,7 +30,7 @@ function Menu(){
     <div className='flex justify-center mt-4'>
         <div className="shadow-md rounded p-6 bg-white w-[80%] flex items-center transition-transform transform-gpu hover:scale-105 hover:cursor-pointer" onClick={to_crowd}>
         <i className="fa fa-users mr-4"></i>
-            <p className="mt-2 mx-auto">Crowd Monitor</p>
+            <p className="mt-2 mx-auto">Live Crowd Monitor</p>
         </div>
     </div>
 
