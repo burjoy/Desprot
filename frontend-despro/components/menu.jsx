@@ -5,6 +5,11 @@ function Menu(){
  const to_crowd = () => {
     navigate("/crowd_monitor");
  }
+
+ const to_announce = () => {
+    console.log("To be announced");
+    navigate("/past_crowd_monitor");
+ }
  return(
     <>
     <div className='max-md:h-screen max-md:my-auto max-md:flex-col max-md:flex max-md:justify-center'>
@@ -26,6 +31,13 @@ function Menu(){
         <div className="shadow-md rounded p-6 bg-white w-[80%] flex items-center transition-transform transform-gpu hover:scale-105 hover:cursor-pointer" onClick={to_crowd}>
         <i className="fa fa-users mr-4"></i>
             <p className="mt-2 mx-auto">Crowd Monitor</p>
+        </div>
+    </div>
+
+    <div className='flex justify-center mt-4'>
+        <div className="shadow-md rounded p-6 bg-white w-[80%] flex items-center transition-transform transform-gpu hover:scale-105 hover:cursor-pointer" onClick={to_announce}>
+        <i className="fa fa-users mr-4"></i>
+            <p className="mt-2 mx-auto">Past Crowd Monitor</p>
         </div>
     </div>
 
