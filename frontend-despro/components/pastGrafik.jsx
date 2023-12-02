@@ -98,7 +98,6 @@ function PastGraph() {
       <Dropdown label="Dropdown button" dismissOnClick={true} className='mx-auto'>
         <Dropdown.Item>Dashboard</Dropdown.Item>
         <Dropdown.Item>Settings</Dropdown.Item>
-        <Dropdown.Item>Earnings</Dropdown.Item>
         <Dropdown.Item>Sign out</Dropdown.Item>
         {tanggal?.map((hari, index) => {
           <Dropdown.Item>{hari}</Dropdown.Item>
